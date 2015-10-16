@@ -3,7 +3,8 @@
 <head>
     <title>My Test Extension Options</title>
     <style>
-      body: { padding: 10px; }
+      body: { width: 800px; padding: 10px; }
+      img: { max-width: 250px; }
     </style>
 </head>
 <body>
@@ -18,11 +19,9 @@
     state ID: <input name="state" /><br/>
     city ID: <input name="city" /><br/>
     avatar: <input type="file" id="fileup" name="avatar" /><br/>
-    <img id="image" />
+    <img id="image" /><br/>
     <input type="submit" value="save" />
   </form>
-
-  <div id="status"></div>
 
   <script src="options.js"></script>
 </body>
