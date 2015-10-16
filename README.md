@@ -3,7 +3,7 @@ chrome-vanysteam
 
 *chrome-vanysteam* is a Chrome extension that allows you to quickly update your Steam profile page to match profiles you can set beforehand.
 
-You can find the latest packaged version on the [Releases Page](https://github.com/S0lll0s/chrome-vanysteam/releases).
+You can find the latest packaged version on the [Releases Page](https://github.com/S0lll0s/chrome-vanysteam/latest).
 
 Disclaimer
 ----------
