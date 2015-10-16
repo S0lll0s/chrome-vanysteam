@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "vanysteam",
+  "version": "0.1",
+
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+
+  "author": "S0lll0s",
+  "content_scripts": [
+    {
+      "matches": ["http://steamcommunity.com/id/*/edit", "http://steamcommunity.com/profiles/*/edit"],
+      "js": ["content.js"]
+    }
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  }
+}
