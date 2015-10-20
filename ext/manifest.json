@@ -1,17 +1,31 @@
 {
   "manifest_version": 2,
   "name": "vanysteam",
-  "version": "1.0.1",
+  "version": "1.1.0",
 
   "permissions": [
     "storage",
     "unlimitedStorage"
   ],
 
+  "browser_action": {
+    "default_title": "vanysteam",
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  },
+
+  "icons": {
+    "128": "logo.png"
+  },
+
   "author": "S0lll0s",
   "content_scripts": [
     {
-      "matches": ["http://steamcommunity.com/id/*/edit", "http://steamcommunity.com/profiles/*/edit"],
+      "matches": ["http://steamcommunity.com/profiles/no*"],
+      "js": ["redirect.js"]
+    },
+    {
+      "matches": ["http://steamcommunity.com/id/*/edit*", "http://steamcommunity.com/profiles/*/edit*"],
       "js": ["content.js"]
     }
   ],

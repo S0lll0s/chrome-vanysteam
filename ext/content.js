@@ -36,6 +36,15 @@ function switchTo(persona) {
 }
 
 function init() {
+  if (document.location.hash.startsWith("#pers-")) {
+    var req = {};
+    var pers = document.location.hash.substr(1);
+    req[pers] = {};
+    chrome.storage.local.get(req, function (data) {
+      switchTo(data[pers]);
+    });
+    return;
+  }
   var btn = document.createElement('button');
   var select = document.createElement('select');
   
