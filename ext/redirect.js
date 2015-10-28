@@ -1,1 +1,1 @@
-window.location.href = document.getElementById('headerUserAvatarIcon').parentElement.href + "/edit" + document.location.hash;
+window.location.href = document.querySelector('.user_avatar').href + "/edit" + document.location.hash;
